@@ -56,7 +56,7 @@ public class GooglePageTest {
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("Selenium Tutorial");
 		searchBox.submit();
-		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google");
+		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
 	}
 	
 	@Test(alwaysRun = true,dependsOnMethods = "searchSeleniumTest")
