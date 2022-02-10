@@ -59,7 +59,7 @@ public class GooglePageTest {
 		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google");
 	}
 	
-	//@Test(alwaysRun = true,dependsOnMethods = "searchSeleniumTest")
+	@Test(alwaysRun = true,dependsOnMethods = "searchSeleniumTest")
 	public void searchAppiumTest() {
 		driver.get("https://www.google.com");
 		WebElement searchBox = driver.findElement(By.name("q"));
